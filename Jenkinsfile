@@ -10,7 +10,7 @@ pipeline {
     stages {
 		stage('Maven Build') {
             steps {
-                sh "mvn -U -am clean package -DskipTests"
+                bat "mvn -U -am clean package -DskipTests"
             }
         }
     }
